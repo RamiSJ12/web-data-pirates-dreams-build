@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Pirates Agency</title>
+    <meta name="description" content="Professional software development and IT solutions by Data Pirates Agency." />
+    <meta name="author" content="Data Pirates Agency" />
+
+    <meta property="og:title" content="Data Pirates Agency" />
+    <meta property="og:description" content="Professional software development and IT solutions by Data Pirates Agency." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Insightly Tracking Snippet -->
+    <script>(function(){
+      var SITE_ID = 5;
+      var BASE = "http://localhost:5000";
+      function sendEvent(type, data){try {var payload = { site_id: SITE_ID, type: type, page: location.href, referrer: document.referrer || null, ts: Date.now(), data: data || {} };if (navigator.sendBeacon) {var blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });navigator.sendBeacon(BASE + '/collect', blob);} else {fetch(BASE + '/collect', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload), keepalive: true }).catch(function(){});} } catch (e) {}}
+      function pixel(type){try {var i = new Image(1,1);i.src = BASE + '/pixel.gif?s=' + encodeURIComponent(SITE_ID) + '&t=' + encodeURIComponent(type) + '&p=' + encodeURIComponent(location.href) + '&r=' + encodeURIComponent(document.referrer || '') + '&ts=' + Date.now();} catch (e) {}}
+    })();</script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
